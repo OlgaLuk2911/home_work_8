@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'intro_boldregular';
+    src: url('./intro-bold-webfont.woff2') format('woff2'),
+         url('./intro-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.wrapper{
+    max-width: 1440px;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 74px 0px 76px;
+    margin-bottom: 102px;
+}
+
+.header__btn{
+    width: 115px;
+    height: 38px;
+    border-radius: 100px;
+    background-color: #5222D0;
+    color: white;
+    border: #5222D0 ;
+}
+
+.title{
+    text-transform: uppercase;
+    font-family: "intro_boldregular";
+    font-size: 4.5vw;
+    line-height: 120%;
+    margin-left: 12%;
+    
+    margin-bottom: 14px;
+    font-weight: 400;
+}
+
+.card-1__subtitle,
+.card-2__subtitle,
+.card-3__subtitle,
+.card-4__subtitle,
+.card-5__subtitle,
+.card-6__subtitle{
+    font-family: "intro_boldregular";
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 120%
+}
+
+.card-1__text,
+.card-2__text,
+.card-3__text,
+.card-4__text,
+.card-5__text{
+    font-family: "Roboto Slab", Arial, serif;
+}
+
+.card-6__subtitle{
+    padding-left: 18px;
+}
+
+.card-6__input{
+    margin-left: 20px;
+}
+
+.card-6_btn{
+    background-color: #5222D0;
+    color: white;
+    font-family: "intro_boldregular";
+    text-transform: uppercase;
+    border-radius: 100px;
+    border-color: #5222D0;
+    font-size: 13px;
+    margin-top: 26px;
+    margin-left: 18px;
+    margin-bottom: 15px;
+    
+}
+
+.footer__list {
+    max-width: 532px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10vw;
+    list-style: none;
+    padding-left: 0;
+    margin-top: 86px;
+}
+
+.footer__list-link {
+    font-family: "Roboto Slab", Arial, serif;
+    font-size: var(--bs-body-font-size);
+    line-height: 160%;
+    color: black;
+    text-decoration: none;
+    
+}
+
+@media screen and (max-width:400px) {
+    .footer__list,
+    .header{
+        flex-direction: column;
+        }
+
+}
